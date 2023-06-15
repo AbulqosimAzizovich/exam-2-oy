@@ -1,0 +1,48 @@
+.intro {
+    padding-top: 350px;
+    height: 480px;
+
+    .wrapper {
+        background: #d0eafc;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding-top: 99px;
+        &__in {
+            display: flex;
+            align-items: center;
+            gap: 48px;
+
+            &--text {
+                p {
+                    margin-bottom: 29px;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 32px;
+                    line-height: 38px;
+                    color: #1e3240;
+
+                    span {
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 48px;
+                        line-height: 57px;
+                        color: #1e3240;
+                    }
+                }
+
+                a {
+                    padding: 18.5px 39.5px;
+                    background: #0071e4;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: #ffffff;
+                    border-radius: 8px;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
