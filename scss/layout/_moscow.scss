@@ -1,0 +1,203 @@
+.moscow {
+    .wrapper {
+        h2 {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 48px;
+            line-height: 57px;
+            color: #100e0e;
+            text-align: center;
+            margin-bottom: 49px;
+        }
+        p {
+            cursor: pointer;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 29px;
+            color: $dark-blue;
+            margin-bottom: 24px;
+        }
+
+        &__f {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            &__item {
+                display: flex;
+                align-items: center;
+                gap: 40px;
+                &--card {
+                    width: 282px;
+                    height: 670px;
+                    padding: 8px 18px;
+                    background: #ffffff;
+                    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+                    border-radius: 16px;
+                    &-lvl {
+                        display: flex;
+                        align-items: center;
+                        gap: 39px;
+
+                        div {
+                            display: flex;
+                            align-items: center;
+                            gap: 5px;
+                            a {
+                                text-decoration: none;
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 16px;
+                                line-height: 19px;
+                                color: $dark-blue;
+                            }
+                        }
+
+                        div:nth-child(2) {
+                            img {
+                                width: 20px;
+                                height: 16px;
+                            }
+                        }
+                    }
+                    h3 {
+                        padding-top: 18px;
+                        text-align: center;
+                        margin-bottom: 9px;
+                    }
+
+                    &-txt {
+                        display: flex;
+                        align-items: center;
+                        gap: 7px;
+                        p {
+                            span {
+                                width: 16px;
+                                height: 16px;
+                                border-radius: 50%;
+                                background: $green-dark;
+                            }
+                            width: 122px;
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 19px;
+                            color: #706e6e;
+                        }
+                    }
+
+                    &-price {
+                        display: flex;
+                        align-items: center;
+                        gap: 14px;
+                        p:nth-child(1) {
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 20px;
+                            line-height: 24px;
+                            text-decoration-line: line-through;
+                            color: #878787;
+                        }
+                        p:nth-child(2) {
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 32px;
+                            line-height: 38px;
+                            color: #100e0e;
+                        }
+                    }
+
+                    button {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        background: $dark-blue;
+                        padding: 17.5px 76.5px;
+                        border: none;
+                        border-radius: 8px;
+                        cursor: pointer;
+                        img:nth-child(1) {
+                            display: flex;
+                        }
+
+                        img:nth-child(2) {
+                            display: none;
+                        }
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 21px;
+                        color: #ffffff;
+                    }
+
+                    &-end {
+                        display: flex;
+                        align-items: center;
+                        gap: 26px;
+                        padding-top: 8px;
+                        p:nth-child(1) {
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 16px;
+                            line-height: 19px;
+                            color: $dark-blue;
+                        }
+                        p:nth-child(2) {
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 16px;
+                            line-height: 19px;
+                            text-align: right;
+                            color: #706e6e;
+                        }
+                    }
+
+                    &:hover {
+                        button {
+                            background: $green-dark;
+                            transition: all 0.1s ease-in-out;
+                            img:nth-child(1) {
+                                display: none;
+                            }
+
+                            img:nth-child(2) {
+                                display: flex;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        
+    }
+    @media only screen and (max-width: 768px) {
+        .wrapper{
+            padding-top: 280px;
+            &__f{
+                display: block;
+                position: relative;
+                left: 100px;
+
+                &__item{
+                    position: relative;
+                    left: -40px;
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 320px) {
+        .wrapper{
+            padding-top: 280px;
+            &__f{
+                display: block;
+                position: relative;
+                left: -10px;
+                &__item{
+                    display: block;
+                }
+            }
+        }
+    }
+}

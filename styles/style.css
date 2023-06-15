@@ -322,8 +322,12 @@ template {
   padding: 0 20px;
 }
 
+@font-face {
+  font-family: "SF Pro Display", sans-serif;
+  src: url(../../assets/fonts/SFPRODISPLAYREGULAR.OTF);
+}
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "SF Pro Display", sans-serif;
 }
 
 header {
@@ -647,9 +651,192 @@ header .nav__wrapper--products-con img {
   }
 }
 
+.moscow .wrapper h2 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 57px;
+  color: #100e0e;
+  text-align: center;
+  margin-bottom: 49px;
+}
+.moscow .wrapper p {
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #0071E4;
+  margin-bottom: 24px;
+}
+.moscow .wrapper__f {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.moscow .wrapper__f__item {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.moscow .wrapper__f__item--card {
+  width: 282px;
+  height: 670px;
+  padding: 8px 18px;
+  background: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+}
+.moscow .wrapper__f__item--card-lvl {
+  display: flex;
+  align-items: center;
+  gap: 39px;
+}
+.moscow .wrapper__f__item--card-lvl div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.moscow .wrapper__f__item--card-lvl div a {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #0071E4;
+}
+.moscow .wrapper__f__item--card-lvl div:nth-child(2) img {
+  width: 20px;
+  height: 16px;
+}
+.moscow .wrapper__f__item--card h3 {
+  padding-top: 18px;
+  text-align: center;
+  margin-bottom: 9px;
+}
+.moscow .wrapper__f__item--card-txt {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.moscow .wrapper__f__item--card-txt p {
+  width: 122px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  color: #706e6e;
+}
+.moscow .wrapper__f__item--card-txt p span {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #52D116;
+}
+.moscow .wrapper__f__item--card-price {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.moscow .wrapper__f__item--card-price p:nth-child(1) {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-decoration-line: line-through;
+  color: #878787;
+}
+.moscow .wrapper__f__item--card-price p:nth-child(2) {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+  color: #100e0e;
+}
+.moscow .wrapper__f__item--card button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #0071E4;
+  padding: 17.5px 76.5px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+}
+.moscow .wrapper__f__item--card button img:nth-child(1) {
+  display: flex;
+}
+.moscow .wrapper__f__item--card button img:nth-child(2) {
+  display: none;
+}
+.moscow .wrapper__f__item--card-end {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  padding-top: 8px;
+}
+.moscow .wrapper__f__item--card-end p:nth-child(1) {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #0071E4;
+}
+.moscow .wrapper__f__item--card-end p:nth-child(2) {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: right;
+  color: #706e6e;
+}
+.moscow .wrapper__f__item--card:hover button {
+  background: #52D116;
+  transition: all 0.1s ease-in-out;
+}
+.moscow .wrapper__f__item--card:hover button img:nth-child(1) {
+  display: none;
+}
+.moscow .wrapper__f__item--card:hover button img:nth-child(2) {
+  display: flex;
+}
+@media only screen and (max-width: 768px) {
+  .moscow .wrapper {
+    padding-top: 280px;
+  }
+  .moscow .wrapper__f {
+    display: block;
+    position: relative;
+    left: 100px;
+  }
+  .moscow .wrapper__f__item {
+    position: relative;
+    left: -40px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .moscow .wrapper {
+    padding-top: 280px;
+  }
+  .moscow .wrapper__f {
+    display: block;
+    position: relative;
+    left: -10px;
+  }
+  .moscow .wrapper__f__item {
+    display: block;
+  }
+}
+
 .intro {
   padding-top: 350px;
   height: 480px;
+  margin-bottom: 360px;
 }
 .intro .wrapper {
   background: #d0eafc;

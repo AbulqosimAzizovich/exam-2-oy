@@ -3,7 +3,11 @@
     margin: 0 auto;
     padding: 0 20px;
 }
+@font-face {
+    font-family: 'SF Pro Display', sans-serif;
+    src: url(../../assets/fonts/SFPRODISPLAYREGULAR.OTF);
+}
 
 body{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'SF Pro Display', sans-serif;
 }
