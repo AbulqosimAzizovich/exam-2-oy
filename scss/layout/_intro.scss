@@ -62,13 +62,18 @@
 @media only screen and (max-width: 768px) {
     .intro {
         margin-top: 40px;
+        height: 600px;
         .wrapper {
+            
             width: 768px;
+
             &__in {
                 display: block;
-                text-align: center;
+                text-align: center; 
                 .wrapper__in--text-zzz1 {
                     display: flex;
+                    width: 308px;
+                    height: 72px;
                 }
                 .wrapper__in--text-zzz {
                     display: none;
@@ -80,6 +85,8 @@
                 &--img2 {
                     display: flex;
                     padding-top: 31px;
+                    width: 269px;
+                    height: 324px;
                 }
             }
         }
