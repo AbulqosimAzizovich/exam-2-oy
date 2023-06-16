@@ -1,7 +1,7 @@
 header {
     width: 100%;
     position: fixed;
-    
+
     top: 0;
     .nav {
         height: 60px;
@@ -27,9 +27,10 @@ header {
                     display: flex;
                     align-items: center;
                     gap: 40px;
-                    &-sss{
+                    &-sss {
                         display: none;
                     }
+                    
                 }
             }
 
@@ -90,9 +91,10 @@ header {
                                 color: #100e0e;
                                 border: 0.01px solid transparent;
                                 &:hover {
+                                    transition: all 0.12s ease;
                                     cursor: pointer;
-                                    color: #0071e4;
-                                    border-bottom: 2px solid #0071e4;
+                                    color: $dark-blue;
+                                    border-bottom: 2px solid $dark-blue;
                                 }
                             }
                             .zb {
@@ -119,6 +121,11 @@ header {
                                     font-size: 14px;
                                     line-height: 24px;
                                     color: #100e0e;
+                                    &:hover{
+                                        transition: all 0.2s ease;
+                                        cursor: pointer;
+                                        color: $light-blue;
+                                    }
                                 }
                             }
 
@@ -128,7 +135,11 @@ header {
                                 font-weight: 400;
                                 font-size: 16px;
                                 line-height: 19px;
-                                color: #0071e4;
+                                color: $dark-blue;
+                                &:hover{
+                                    color: $light-blue;
+
+                                }
                             }
                         }
                     }
@@ -150,6 +161,7 @@ header {
                     border: none;
                     cursor: pointer;
                     &:hover {
+                        background: $light-blue;
                         box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
                         transition: all 0.2s ease-out;
                     }
@@ -173,7 +185,7 @@ header {
                 .div1 {
                     display: flex;
                     align-items: center;
-                    background: #52d116;
+                    background: $green-dark;
                     text-decoration: none;
                     padding: 16px 34px;
                     border-radius: 16px;
@@ -181,7 +193,8 @@ header {
                     gap: 15px;
 
                     &:hover {
-                        box-shadow: 2px 10px #f1f0f0;
+                        background: $green-light;
+                        box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
                         transition: all 0.2s ease-out;
                     }
                     div {
@@ -262,12 +275,11 @@ header {
                 }
             }
             @media only screen and (max-width: 768px) {
-
                 &--tb {
                     display: flex;
 
                     &-right {
-                        .nav__wrapper--tb-right-sss{
+                        .nav__wrapper--tb-right-sss {
                             display: none;
                         }
                         div {
@@ -283,7 +295,6 @@ header {
                                 color: #100e0e;
                             }
                         }
-            
                     }
                 }
                 &--top {
@@ -314,11 +325,10 @@ header {
                             border: none;
                             display: none;
                         }
-                        
                     }
 
                     &-right {
-                        .nav__wrapper--tb-right-sss{
+                        .nav__wrapper--tb-right-sss {
                             display: flex;
                         }
                         div {
@@ -328,7 +338,7 @@ header {
                             p {
                                 display: none;
                             }
-                            .sss{
+                            .sss {
                                 display: flex;
                             }
                         }

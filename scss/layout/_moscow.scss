@@ -168,18 +168,16 @@
                 }
             }
         }
-
-        
     }
     @media only screen and (max-width: 768px) {
-        .wrapper{
+        .wrapper {
             padding-top: 280px;
-            &__f{
+            &__f {
                 display: block;
                 position: relative;
                 left: 100px;
 
-                &__item{
+                &__item {
                     position: relative;
                     left: -40px;
                 }
@@ -188,13 +186,28 @@
     }
 
     @media only screen and (max-width: 320px) {
-        .wrapper{
+        .wrapper {
+            h2 {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 23px;
+                line-height: 29px;
+                color: #100e0e;
+            }
+
+            .href {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 19px;
+                color: $dark-blue;
+            }
             padding-top: 280px;
-            &__f{
+            &__f {
                 display: block;
                 position: relative;
-                left: -10px;
-                &__item{
+                left: 30px;
+                &__item {
                     display: block;
                 }
             }

@@ -41,6 +41,10 @@
                     color: #ffffff;
                     border-radius: 8px;
                     text-decoration: none;
+                    &:hover{
+                        transition: all 0.2s ease-in-out;
+                        background: $light-blue;
+                    }
                 }
 
                 &-zzz {
@@ -53,7 +57,7 @@
         }
 
         @media only screen and (max-width: 768px) {
-            padding-top: -350px;
+            width: 760px;
 
             &__in {
                 display: block;
@@ -75,17 +79,28 @@
             }
         }
         @media only screen and (max-width: 320px) {
+            .left{
+                width: 9.6px;
+                height: 16.8px;
+            }
+            .right{
+                width: 9.6px;
+                height: 16.8px;
+            }
             &__in {
                 display: block;
                 text-align: center;
                 .wrapper__in--text-zzz1 {
                     display: flex;
+                    width: 192px;
+                    height: 45px;
                 }
                 .wrapper__in--text-zzz {
                     display: none;
                 }
+                
                 img{
-                    width: 200px;
+                    width: 173px;
                     height: 207px;
                 }
 
