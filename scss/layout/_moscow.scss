@@ -1,4 +1,5 @@
 .moscow {
+    margin-top: -300px;
     .wrapper {
         h2 {
             font-style: normal;
@@ -10,6 +11,8 @@
             margin-bottom: 49px;
         }
         p {
+            width: 212px;
+            text-align: center;
             cursor: pointer;
             font-style: normal;
             font-weight: 500;
@@ -17,6 +20,10 @@
             line-height: 29px;
             color: $dark-blue;
             margin-bottom: 24px;
+            &:hover{
+                color: $light-blue;
+                transition: all 0.2s ease;
+            }
         }
 
         &__f {
@@ -100,8 +107,8 @@
                         }
                         p:nth-child(2) {
                             font-style: normal;
-                            font-weight: 500;
-                            font-size: 32px;
+                            font-weight: 600;
+                            font-size: 26px;
                             line-height: 38px;
                             color: #100e0e;
                         }
@@ -169,9 +176,16 @@
             }
         }
     }
-    @media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 768px) {
+    .moscow {
+        margin-top: -370px;
         .wrapper {
+            width: 768px;
             padding-top: 280px;
+            position: relative;
+            left: 25px;
             &__f {
                 display: block;
                 position: relative;
@@ -180,19 +194,24 @@
                 &__item {
                     position: relative;
                     left: -40px;
+
                 }
             }
         }
     }
+}
 
-    @media only screen and (max-width: 320px) {
-        .wrapper {
+@media only screen and (max-width: 320px) {
+    .moscow {
+        margin-top: -650px;
+        .wrapper {   
             h2 {
                 font-style: normal;
                 font-weight: 600;
                 font-size: 23px;
                 line-height: 29px;
                 color: #100e0e;
+                text-align: start;
             }
 
             .href {
@@ -202,7 +221,6 @@
                 line-height: 19px;
                 color: $dark-blue;
             }
-            padding-top: 280px;
             &__f {
                 display: block;
                 position: relative;

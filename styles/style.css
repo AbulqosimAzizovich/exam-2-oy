@@ -316,6 +316,10 @@ template {
   scroll-behavior: smooth;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .container {
   max-width: 1220px;
   margin: 0 auto;
@@ -333,6 +337,7 @@ body {
 header {
   width: 100%;
   position: fixed;
+  z-index: 1;
   top: 0;
 }
 header .nav {
@@ -344,7 +349,6 @@ header .nav__wrapper {
 header .nav__wrapper--tb {
   display: none;
   align-items: center;
-  justify-content: space-between;
 }
 header .nav__wrapper--tb-left {
   display: flex;
@@ -359,7 +363,7 @@ header .nav__wrapper--tb-left input {
 header .nav__wrapper--tb-right {
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 32px;
 }
 header .nav__wrapper--tb-right-sss {
   display: none;
@@ -564,10 +568,10 @@ header .nav__wrapper--products-item p {
   color: #100e0e;
 }
 header .nav__wrapper--products-item:hover p {
-  color: #0071e4;
+  color: #0071E4;
 }
 header .nav__wrapper--products-item:hover path {
-  fill: #0071e4;
+  fill: #0071E4;
 }
 header .nav__wrapper--products-con {
   display: flex;
@@ -587,6 +591,9 @@ header .nav__wrapper--products-con img {
   padding: 1px 16px;
 }
 @media only screen and (max-width: 768px) {
+  header .nav__wrapper {
+    width: 768px;
+  }
   header .nav__wrapper--tb {
     display: flex;
   }
@@ -599,7 +606,7 @@ header .nav__wrapper--products-con img {
     align-items: center;
   }
   header .nav__wrapper--tb-right div p {
-    width: 124px;
+    width: 130px;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -620,8 +627,12 @@ header .nav__wrapper--products-con img {
   }
 }
 @media only screen and (max-width: 320px) {
+  header .nav__wrapper {
+    width: 320px;
+  }
   header .nav__wrapper--tb {
     display: flex;
+    gap: 120px;
   }
   header .nav__wrapper--tb-left {
     display: flex;
@@ -636,10 +647,11 @@ header .nav__wrapper--products-con img {
   }
   header .nav__wrapper--tb-right .nav__wrapper--tb-right-sss {
     display: flex;
+    gap: 10px;
   }
   header .nav__wrapper--tb-right div {
     display: flex;
-    gap: 4px;
+    gap: 1.5px;
     align-items: center;
   }
   header .nav__wrapper--tb-right div p {
@@ -662,6 +674,9 @@ header .nav__wrapper--products-con img {
   }
 }
 
+.advantages {
+  margin-bottom: 380px;
+}
 .advantages .wrapper h2 {
   font-style: normal;
   font-weight: 700;
@@ -685,6 +700,9 @@ header .nav__wrapper--products-con img {
   gap: 88px;
   padding: 84px 120px 0px 120px;
   margin-bottom: 32px;
+}
+.advantages .wrapper .wrapper__txt .image {
+  display: none;
 }
 .advantages .wrapper .wrapper__txt--item h2 {
   font-style: normal;
@@ -715,6 +733,68 @@ header .nav__wrapper--products-con img {
   background: #2A93FD;
 }
 
+@media only screen and (max-width: 768px) {
+  .advantages .wrapper {
+    width: 768px;
+  }
+  .advantages .wrapper__txt {
+    gap: 72px;
+  }
+  .advantages .wrapper__txt img {
+    width: 170px;
+    height: 332px;
+  }
+  .advantages .wrapper__txt .wrapper__txt--item h2 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+  .advantages .wrapper__txt .wrapper__txt--item p {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .advantages .wrapper {
+    width: 320px;
+  }
+  .advantages .wrapper h2 {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .advantages .wrapper p {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .advantages .wrapper .wrapper__txt {
+    gap: 18px;
+    padding: 24px 30px 0 16px;
+  }
+  .advantages .wrapper .wrapper__txt .image {
+    display: flex;
+    width: 65px;
+    height: 163px;
+  }
+  .advantages .wrapper .wrapper__txt img:nth-child(1) {
+    display: none;
+  }
+  .advantages .wrapper .wrapper__txt--item h2 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .advantages .wrapper .wrapper__txt--item p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .advantages .wrapper .wrapper__txt--item a {
+    font-size: 16px;
+    line-height: 19px;
+    padding: 10px 39px;
+  }
+}
+.moscow {
+  margin-top: -300px;
+}
 .moscow .wrapper h2 {
   font-style: normal;
   font-weight: 500;
@@ -725,6 +805,8 @@ header .nav__wrapper--products-con img {
   margin-bottom: 49px;
 }
 .moscow .wrapper p {
+  width: 212px;
+  text-align: center;
   cursor: pointer;
   font-style: normal;
   font-weight: 500;
@@ -732,6 +814,10 @@ header .nav__wrapper--products-con img {
   line-height: 29px;
   color: #0071E4;
   margin-bottom: 24px;
+}
+.moscow .wrapper p:hover {
+  color: #2A93FD;
+  transition: all 0.2s ease;
 }
 .moscow .wrapper__f {
   display: flex;
@@ -812,8 +898,8 @@ header .nav__wrapper--products-con img {
 }
 .moscow .wrapper__f__item--card-price p:nth-child(2) {
   font-style: normal;
-  font-weight: 500;
-  font-size: 32px;
+  font-weight: 600;
+  font-size: 26px;
   line-height: 38px;
   color: #100e0e;
 }
@@ -869,9 +955,16 @@ header .nav__wrapper--products-con img {
 .moscow .wrapper__f__item--card:hover button img:nth-child(2) {
   display: flex;
 }
+
 @media only screen and (max-width: 768px) {
+  .moscow {
+    margin-top: -370px;
+  }
   .moscow .wrapper {
+    width: 768px;
     padding-top: 280px;
+    position: relative;
+    left: 25px;
   }
   .moscow .wrapper__f {
     display: block;
@@ -884,8 +977,8 @@ header .nav__wrapper--products-con img {
   }
 }
 @media only screen and (max-width: 320px) {
-  .moscow .wrapper {
-    padding-top: 280px;
+  .moscow {
+    margin-top: -650px;
   }
   .moscow .wrapper h2 {
     font-style: normal;
@@ -893,6 +986,7 @@ header .nav__wrapper--products-con img {
     font-size: 23px;
     line-height: 29px;
     color: #100e0e;
+    text-align: start;
   }
   .moscow .wrapper .href {
     font-style: normal;
@@ -910,9 +1004,8 @@ header .nav__wrapper--products-con img {
     display: block;
   }
 }
-
 .intro {
-  padding-top: 350px;
+  margin-top: 350px;
   height: 480px;
   margin-bottom: 360px;
 }
@@ -964,9 +1057,13 @@ header .nav__wrapper--products-con img {
 .intro .wrapper__in--img2 {
   display: none;
 }
+
 @media only screen and (max-width: 768px) {
+  .intro {
+    margin-top: 40px;
+  }
   .intro .wrapper {
-    width: 760px;
+    width: 768px;
   }
   .intro .wrapper__in {
     display: block;
@@ -987,6 +1084,9 @@ header .nav__wrapper--products-con img {
   }
 }
 @media only screen and (max-width: 320px) {
+  .intro .wrapper {
+    width: 320px;
+  }
   .intro .wrapper .left {
     width: 9.6px;
     height: 16.8px;
@@ -1033,7 +1133,6 @@ header .nav__wrapper--products-con img {
     padding: 10.5px 39.5px;
   }
 }
-
 footer {
   width: 100%;
   height: auto;

@@ -1,7 +1,7 @@
 header {
     width: 100%;
     position: fixed;
-
+    z-index: 1;
     top: 0;
     .nav {
         height: 60px;
@@ -11,7 +11,7 @@ header {
             &--tb {
                 display: none;
                 align-items: center;
-                justify-content: space-between;
+                
                 &-left {
                     display: flex;
                     align-items: center;
@@ -26,7 +26,7 @@ header {
                 &-right {
                     display: flex;
                     align-items: center;
-                    gap: 40px;
+                    gap: 32px;
                     &-sss {
                         display: none;
                     }
@@ -248,10 +248,10 @@ header {
 
                     &:hover {
                         p {
-                            color: #0071e4;
+                            color: $dark-blue;
                         }
                         path {
-                            fill: #0071e4;
+                            fill: $dark-blue;
                         }
                     }
                 }
@@ -275,6 +275,7 @@ header {
                 }
             }
             @media only screen and (max-width: 768px) {
+                width: 768px;
                 &--tb {
                     display: flex;
 
@@ -287,7 +288,8 @@ header {
                             gap: 4px;
                             align-items: center;
                             p {
-                                width: 124px;
+                                
+                                width: 130px;
                                 font-style: normal;
                                 font-weight: 400;
                                 font-size: 16px;
@@ -312,9 +314,10 @@ header {
             }
 
             @media only screen and (max-width: 320px) {
+                width: 320px;
                 &--tb {
                     display: flex;
-
+                    gap: 120px;
                     &-left {
                         display: flex;
                         align-items: center;
@@ -330,10 +333,11 @@ header {
                     &-right {
                         .nav__wrapper--tb-right-sss {
                             display: flex;
+                            gap: 10px;
                         }
                         div {
                             display: flex;
-                            gap: 4px;
+                            gap: 1.5px;
                             align-items: center;
                             p {
                                 display: none;

@@ -1,4 +1,5 @@
 .advantages {
+    margin-bottom: 380px;
     .wrapper {
         h2 {
             font-style: normal;
@@ -25,8 +26,10 @@
             gap: 88px;
             padding: 84px 120px 0px 120px;
             margin-bottom: 32px;
+            .image {
+                display: none;
+            }
             &--item {
-                
                 h2 {
                     font-style: normal;
                     font-weight: 700;
@@ -53,8 +56,79 @@
                     line-height: 19px;
                     color: #ffffff;
 
-                    &:hover{
+                    &:hover {
                         background: $light-blue;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .advantages {
+        .wrapper {
+            width: 768px;
+            &__txt {
+                gap: 72px;
+                img {
+                    width: 170px;
+                    height: 332px;
+                }
+                .wrapper__txt--item {
+                    h2 {
+                        font-size: 30px;
+                        line-height: 38px;
+                    }
+                    p {
+                        font-size: 16px;
+                        line-height: 19px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .advantages {
+        .wrapper {
+            width: 320px;
+            h2 {
+                font-size: 24px;
+                line-height: 29px;
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 19px;
+            }
+            .wrapper__txt {
+                gap: 18px;
+                padding: 24px 30px 0 16px;
+                .image {
+                    display: flex;
+                    width: 65px;
+                    height: 163px;
+                }
+                img:nth-child(1) {
+                    display: none;
+                }
+
+                &--item {
+                    h2 {
+                        font-size: 20px;
+                        line-height: 24px;
+                    }
+                    p {
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 19px;
+                    }
+                    a {
+                        font-size: 16px;
+                        line-height: 19px;
+                        padding: 10px 39px;
                     }
                 }
             }
