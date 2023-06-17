@@ -95,8 +95,10 @@
 
 @media only screen and (max-width: 320px) {
     .intro {
+        height: 355px;
         .wrapper {
             width: 320px;
+            padding-top: 16px;
             .left {
                 width: 9.6px;
                 height: 16.8px;

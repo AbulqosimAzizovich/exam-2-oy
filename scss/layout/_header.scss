@@ -102,8 +102,9 @@ header {
                                 background: #fdefbf;
                                 border-radius: 8px;
                                 &:hover {
-                                    background: #ffffff;
-                                    border-radius: 1%;
+                                    background: $dark-blue;
+                                    border-radius: 8px;
+                                    color: #ffffff;
                                 }
                             }
                         }
@@ -233,7 +234,7 @@ header {
                 display: flex;
                 align-items: center;
                 padding-top: 40px;
-                gap: 32px;
+                gap: 27px;
                 &-item {
                     display: flex;
                     align-items: center;

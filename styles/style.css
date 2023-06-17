@@ -433,8 +433,9 @@ header .nav__wrapper--down .wrapper__left__content .zb {
   border-radius: 8px;
 }
 header .nav__wrapper--down .wrapper__left__content .zb:hover {
-  background: #ffffff;
-  border-radius: 1%;
+  background: #0071E4;
+  border-radius: 8px;
+  color: #ffffff;
 }
 header .nav__wrapper--down .wrapper__left__contact {
   position: relative;
@@ -548,7 +549,7 @@ header .nav__wrapper--products {
   display: flex;
   align-items: center;
   padding-top: 40px;
-  gap: 32px;
+  gap: 27px;
 }
 header .nav__wrapper--products-item {
   display: flex;
@@ -778,8 +779,12 @@ header .nav__wrapper--products-con img {
   }
 }
 @media only screen and (max-width: 320px) {
+  .intro {
+    height: 355px;
+  }
   .intro .wrapper {
     width: 320px;
+    padding-top: 16px;
   }
   .intro .wrapper .left {
     width: 9.6px;
@@ -857,12 +862,12 @@ header .nav__wrapper--products-con img {
 .moscow .wrapper__f {
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 15px;
 }
 .moscow .wrapper__f__item {
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 25px;
 }
 .moscow .wrapper__f__item--card {
   width: 282px;
@@ -980,6 +985,12 @@ header .nav__wrapper--products-con img {
   text-align: right;
   color: #706e6e;
 }
+.moscow .wrapper__f__item--card:hover {
+  background: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+  transition: all 0.3s ease-in-out;
+}
 .moscow .wrapper__f__item--card:hover button {
   background: #52D116;
   transition: all 0.1s ease-in-out;
@@ -1011,7 +1022,7 @@ header .nav__wrapper--products-con img {
 }
 @media only screen and (max-width: 320px) {
   .moscow {
-    margin-top: -650px;
+    margin-top: -340px;
   }
   .moscow .wrapper h2 {
     font-style: normal;
@@ -1172,7 +1183,7 @@ header .nav__wrapper--products-con img {
   padding: 24px 27px 16px 27px;
 }
 .services .wrapper__cards1__items1--txt {
-  margin-bottom: 99px;
+  margin-bottom: 90px;
 }
 .services .wrapper__cards1__items1--txt-sd h3 {
   font-style: normal;
@@ -1201,6 +1212,17 @@ header .nav__wrapper--products-con img {
   border: 1px solid #0071e4;
   border-radius: 8px;
   text-decoration: none;
+}
+.services .wrapper__cards1__items1 a:hover {
+  background: #2A93FD;
+  transition: all 0.3s ease-in-out;
+  color: #fff;
+}
+.services .wrapper__cards1__items1:hover {
+  background: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+  transition: all 0.7s ease-in-out;
 }
 .services .wrapper__cards1__items2 {
   background: linear-gradient(180.04deg, #e685ff 0.04%, #f2f2f2 65.84%);
@@ -1243,6 +1265,17 @@ header .nav__wrapper--products-con img {
   border-radius: 8px;
   text-decoration: none;
 }
+.services .wrapper__cards1__items2 a:hover {
+  background: #2A93FD;
+  transition: all 0.3s ease-in-out;
+  color: #fff;
+}
+.services .wrapper__cards1__items2:hover {
+  background: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+  transition: all 0.7s ease-in-out;
+}
 .services .wrapper__cards1__items3 {
   background: linear-gradient(180.04deg, #7de9ff 0.04%, #f2f2f2 65.84%);
   border-radius: 16px;
@@ -1283,6 +1316,17 @@ header .nav__wrapper--products-con img {
   border: 1px solid #0071e4;
   border-radius: 8px;
   text-decoration: none;
+}
+.services .wrapper__cards1__items3 a:hover {
+  background: #2A93FD;
+  transition: all 0.3s ease-in-out;
+  color: #fff;
+}
+.services .wrapper__cards1__items3:hover {
+  background: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+  transition: all 0.7s ease-in-out;
 }
 .services .wrapper__cards1__items4 {
   background: linear-gradient(180.04deg, #ffe685 0.04%, #f2f2f2 65.84%);
@@ -1325,6 +1369,17 @@ header .nav__wrapper--products-con img {
   border-radius: 8px;
   text-decoration: none;
 }
+.services .wrapper__cards1__items4 a:hover {
+  background: #2A93FD;
+  transition: all 0.3s ease-in-out;
+  color: #fff;
+}
+.services .wrapper__cards1__items4:hover {
+  background: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+  transition: all 0.7s ease-in-out;
+}
 .services .wrapper__cards1__items5 {
   background: linear-gradient(180.04deg, #ffe685 0.04%, #f2f2f2 65.84%);
   border-radius: 16px;
@@ -1365,6 +1420,17 @@ header .nav__wrapper--products-con img {
   border: 1px solid #0071e4;
   border-radius: 8px;
   text-decoration: none;
+}
+.services .wrapper__cards1__items5 a:hover {
+  background: #2A93FD;
+  transition: all 0.3s ease-in-out;
+  color: #fff;
+}
+.services .wrapper__cards1__items5:hover {
+  background: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+  transition: all 0.7s ease-in-out;
 }
 .services .wrapper__cards2 {
   display: none;
