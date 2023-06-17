@@ -1,0 +1,257 @@
+#subscribe {
+    padding: 40px 0 40px 0;
+    background: #f9f9f9;
+
+    .sub_all {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .sub_card {
+            width: 486px;
+
+            h2 {
+                font-weight: 700;
+                font-size: 48px;
+                line-height: 57px;
+                color: #100e0e;
+            }
+
+            .sub_text {
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 29px;
+                color: #585656;
+                margin: 8px 0 25px;
+            }
+
+            .sub_send {
+                width: 516px;
+                height: 196px;
+                background: linear-gradient(90.34deg, #f7355d 0.3%, #9747ff 101.33%);
+                border-radius: 16px;
+                padding: 16px 32px;
+
+                .sub_text1 {
+                    h3 {
+                        font-weight: 700;
+                        font-size: 40px;
+                        line-height: 48px;
+                        color: #ffffff;
+                    }
+
+                    p {
+                        font-weight: 500;
+                        font-size: 20px;
+                        line-height: 24px;
+                        color: #ffffff;
+                        margin: 4px 0 16px 0;
+                    }
+                }
+
+                .sub_input {
+                    form {
+                        display: flex;
+                        gap: 16px;
+                    }
+
+                    input {
+                        width: 246px;
+                        height: 56px;
+                        background: #ffffff;
+                        border: 1px solid #dbdbdb;
+                        border-radius: 8px;
+                        padding-left: 24px;
+                    }
+
+                    .sub_btn1 {
+                        padding: 18px 33px;
+                        background: #e7e7e7;
+                        border-radius: 8px;
+                        border: transparent;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 19px;
+                        color: #585656;
+                        cursor: pointer;
+                        text-decoration: none;
+                        &:hover {
+                            background-color: #ffffff;
+                            border: 1px solid #0071e4;
+                            color: #0071e4;
+                            border: 0.01px solid transparent;
+                        }
+
+                        &:active {
+                            background: #0071e4;
+                            color: #ffffff;
+                            border: 0.01px solid transparent;
+                        }
+                    }
+
+                    .sub_btn2{
+                        display: none;
+                        padding: 18px 33px;
+                        background: #e7e7e7;
+                        border-radius: 8px;
+                        border: transparent;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 19px;
+                        color: #585656;
+                        cursor: pointer;
+                        text-decoration: none;
+                        &:hover {
+                            background-color: #ffffff;
+                            border: 1px solid #0071e4;
+                            color: #0071e4;
+                            border: 0.01px solid transparent;
+                        }
+
+                        &:active {
+                            background: #0071e4;
+                            color: #ffffff;
+                            border: 0.01px solid transparent;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #subscribe {
+        .sub_all {
+            img {
+                width: 224px;
+                height: 173px;
+            }
+
+            .sub_card {
+                .sub_text {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: #585656;
+                }
+                .sub_send {
+                    background: #ffffff;
+                    h2 {
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 32px;
+                        line-height: 38px;
+                        color: #100e0e;
+                    }
+
+                    .sub_text1 {
+                        width: 279px;
+                        height: 63px;
+                        background: linear-gradient(90.34deg, #f7355d 0.3%, #9747ff 101.33%);
+                        border-radius: 8px;
+                        padding: 8px 16px;
+                        margin-bottom: 16px;
+                        h3 {
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 20px;
+                            line-height: 24px;
+                            color: #ffffff;
+                        }
+
+                        p {
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 16px;
+                            line-height: 19px;
+                            color: #ffffff;
+                        }
+                    }
+
+                    .sub_input {
+                        input {
+                            border: 1px solid #dbdbdb;
+                            border-radius: 8px;
+                        }
+                        button {
+                            &:hover {
+                                border: 0.01px solid transparent;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    #subscribe {
+        .sub_all {
+            img {
+                display: none;
+            }
+            .sub_card {
+                h2 {
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 29px;
+                    color: #100e0e;
+                    width: 228px;
+                }
+                .sub_text {
+                    width: 300px;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 19px;
+                }
+
+                .sub_send {
+                    position: relative;
+                    left: -35px;
+                    .sub_text1 {
+                        width: 288px;
+                        height: 56px;
+                        h3 {
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 16px;
+                            line-height: 19px;
+                            color: #ffffff;
+                        }
+                        p {
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 17px;
+                        }
+                    }
+                    .sub_input {
+                        form {
+                            display: block;
+
+                            input{
+                                width: 288px;
+                                height: 56px;
+                            }
+                            .sub_btn1{
+                                display: none;
+                            }
+
+                            .sub_btn2{
+                                display: block;
+                                margin-top: 8px;
+                                width: 288px;
+                                height: 56px;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}

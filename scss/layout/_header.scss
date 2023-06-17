@@ -2,14 +2,13 @@ header {
     width: 100%;
     position: fixed;
     z-index: 1;
-    
-    
+    height: 350px;
+    background: #fff;
     top: 0;
     .nav {
-        height: 60px;
+        
 
         &__wrapper {
-            backdrop-filter: blur(5px);
             &--tb {
                 display: none;
                 align-items: center;
@@ -256,6 +255,19 @@ header {
                             fill: $dark-blue;
                         }
                     }
+                    
+                }
+
+                .acc{
+                    &:hover {
+                        p {
+                            color: $dark-blue;
+                        }
+                        path {
+                            stroke: $dark-blue;
+                            fill: none;
+                        }
+                    }
                 }
 
                 &-con {
@@ -276,11 +288,25 @@ header {
                     }
                 }
             }
-            @media only screen and (max-width: 768px) {
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        height: 40px;
+        background: #fff;
+        top: 0;
+        .nav {
+              
+            &__wrapper {
                 width: 768px;
                 &--tb {
                     display: flex;
-
+            
                     &-right {
                         .nav__wrapper--tb-right-sss {
                             display: none;
@@ -313,9 +339,23 @@ header {
                 &--products {
                     display: none;
                 }
-            }
 
-            @media only screen and (max-width: 320px) {
+            }
+        }
+
+}
+}
+
+@media only screen and (max-width: 320px) {
+    header {
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        height: 40px;
+        background: #fff;
+        top: 0;
+        .nav {        
+            &__wrapper {    
                 width: 320px;
                 &--tb {
                     display: flex;
@@ -331,7 +371,7 @@ header {
                             display: none;
                         }
                     }
-
+            
                     &-right {
                         .nav__wrapper--tb-right-sss {
                             display: flex;
@@ -362,7 +402,9 @@ header {
                 &--products {
                     display: none;
                 }
+
             }
         }
-    }
+        }
+    
 }
