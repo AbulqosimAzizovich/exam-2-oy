@@ -1,47 +1,46 @@
-.advantages {
-    
-    margin-bottom: 380px;
+.advantagestxt {
+    background-color: #000000;
     .wrapper {
-        h2 {
-            font-style: normal;
-            font-weight: 700;
-            font-size: 32px;
-            line-height: 38px;
-            color: #100e0e;
-            margin-bottom: 22px;
-        }
+        .wrapper__txt {
+            
 
-        p {
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 19px;
-            color: #585656;
+            display: flex;
+            align-items: center;
+            gap: 88px;
+            padding: 84px 120px 0px 120px;
             margin-bottom: 32px;
-        }
-
-        
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    .advantages {
-        .wrapper {
-            width: 768px;
-            &__txt {
-                gap: 72px;
-                img {
-                    width: 170px;
-                    height: 332px;
+            .image {
+                display: none;
+            }
+            &--item {
+                h2 {
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 56px;
+                    line-height: 67px;
+                    color: #ffffff;
                 }
-                .wrapper__txt--item {
-                    h2 {
-                        font-size: 30px;
-                        line-height: 38px;
-                    }
-                    p {
-                        font-size: 16px;
-                        line-height: 19px;
+                p {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 24px;
+                    line-height: 29px;
+                    color: #ffffff;
+                    margin-bottom: 34px;
+                }
+
+                a {
+                    background: $dark-blue;
+                    border-radius: 8px;
+                    text-decoration: none;
+                    padding: 18.5px 39.5px;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: #ffffff;
+                    &:hover {
+                        background: $light-blue;
                     }
                 }
             }
@@ -49,8 +48,9 @@
     }
 }
 
+
 @media only screen and (max-width: 320px) {
-    .advantages {
+    .advantagestxt {
         .wrapper {
             width: 320px;
             h2 {

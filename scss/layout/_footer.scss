@@ -185,11 +185,50 @@
         justify-content: space-between;
         display: flex;
         align-items: center;
-        div {
+        div:nth-child(1){
           column-gap: 8px;
           display: flex;
           align-items: center;
-          justify-content: center;
+          justify-content: center;  
+          path{
+            fill: #706E6E;
+          }
+          &:hover{
+            color: $green-light;
+            path{
+              fill: $green-light
+            }
+          }
+
+          &:focus{
+            color: $dark-blue;
+            path{
+              fill: $green-light
+            }
+          }
+        }
+
+        div{
+          column-gap: 8px;
+          display: flex;
+          align-items: center;
+          justify-content: center;  
+          path{
+            fill: #706E6E;
+          }
+          &:hover{
+            color: $dark-blue;
+            path{
+              fill: $dark-blue;
+            }
+          }
+
+          &:focus{
+            color: $dark-blue;
+            path{
+              fill: $dark-blue;
+            }
+          }
         }
       }
     }

@@ -1,6 +1,6 @@
-.advantages {
-    
-    margin-bottom: 380px;
+.advantages1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
     .wrapper {
         h2 {
             font-style: normal;
@@ -17,7 +17,6 @@
             font-size: 16px;
             line-height: 19px;
             color: #585656;
-            margin-bottom: 32px;
         }
 
         
@@ -25,7 +24,7 @@
 }
 
 @media only screen and (max-width: 768px) {
-    .advantages {
+    .advantages1 {
         .wrapper {
             width: 768px;
             &__txt {
@@ -50,7 +49,7 @@
 }
 
 @media only screen and (max-width: 320px) {
-    .advantages {
+    .advantages1 {
         .wrapper {
             width: 320px;
             h2 {
